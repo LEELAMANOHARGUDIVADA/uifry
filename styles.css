@@ -1,0 +1,2233 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+  --background-primary-blur-color: #ff5555;
+  --background-secondary-blur-color: #fde598;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+/* header  */
+.header-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  z-index: 999;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: #000000;
+  font-size: medium;
+  font-weight: 500;
+  cursor: pointer;
+  transition: ease-in;
+  transition-duration: 0.3s;
+}
+nav ul li a:hover{
+    color: var(--background-primary-blur-color);
+}
+
+#header .download-btn-container button a {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 18px 40px;
+  border-radius: 5px;
+  font-size: small;
+  font-weight: 500;
+}
+
+/* hero section */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .hero-container {
+  width: 40%;
+  position: absolute;
+  top: 150px;
+  left: 380px;
+  z-index: 10;
+}
+
+#hero .hero-container h2 {
+  font-size: 70px;
+  color: var(--secondary-color);
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+.hero-container p {
+  color: gray;
+}
+.hero-container .quick-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 230px;
+}
+.quick-buttons .get-started-btn a {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 18px 40px;
+  border-radius: 5px;
+  font-size: small;
+  font-weight: 500;
+  position: absolute;
+}
+.quick-buttons .watch-video-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  /* z-index: 10; */
+}
+.quick-buttons .watch-video-btn a {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+  gap: 5px;
+}
+#hero .hero-image {
+  position: absolute;
+  right: 200px;
+  top: 50px;
+}
+.hero-image .rings {
+  position: absolute;
+}
+.hero-image .ellipse-2 {
+  position: relative;
+  top: 320px;
+  left: 80px;
+}
+.hero-image .iphone-1 {
+  position: absolute;
+  top: 130px;
+  right: -70px;
+  z-index: 100;
+}
+.hero-image .iphone-2 {
+  position: absolute;
+  top: 65px;
+  right: -40px;
+  z-index: 200;
+}
+.hero-image .iphone-3 {
+  position: absolute;
+  top: 10px;
+  right: 85px;
+  z-index: 300;
+}
+.banner-tag {
+  position: relative;
+  top: 450px;
+  z-index: 20;
+  right: 300px;
+}
+
+.star-1 {
+  position: absolute;
+  top: 45px;
+  right: 270px;
+}
+#ellipse {
+  position: absolute;
+  top: 20px;
+  left: 500px;
+}
+
+.star-2 {
+  position: absolute;
+  top: 70%;
+  right: 33%;
+}
+.star-3 {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+.star-4 {
+  position: absolute;
+  left: 540px;
+  top: 63%;
+}
+
+/* features section  */
+
+#features {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 480px;
+  padding: 0 15%;
+}
+#features .ellipse-3 {
+  position: relative;
+}
+#features .rings-2 {
+  position: relative;
+  bottom: 500px;
+}
+#features .iphone-4 {
+  position: relative;
+  bottom: 1170px;
+  left: 180px;
+}
+#features .features-content {
+  position: relative;
+  bottom: 600px;
+  left: 100px;
+}
+.features-content h4,
+.advantages-content h4 {
+  font-size: large;
+  color: var(--background-primary-blur-color);
+  font-weight: 600;
+}
+.features-content h3,
+.advantages-content h3 {
+  font-size: 50px;
+}
+.features-content .feature-box {
+  margin-top: 25px;
+}
+.feature-box .feature-title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.feature-title h3 {
+  font-size: large;
+}
+.feature-box p {
+  margin-top: 5px;
+  color: gray;
+}
+.ellipse-4 {
+  position: absolute;
+  right: 100px;
+  top: 1120px;
+}
+.star-5 {
+  position: absolute;
+  top: 120%;
+  left: 245px;
+}
+
+#advantages {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.advantages-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  position: absolute;
+  bottom: 800px;
+  left: 300px;
+}
+
+.advantages-box .title {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+.title h3 {
+  font-size: 28px;
+}
+.advantages-box p {
+  width: 100%;
+  line-height: 40px;
+  font-size: 20px;
+  margin-top: 20px;
+  color: gray;
+}
+.ellipse-5 {
+  position: absolute;
+  right: 220px;
+  bottom: 600px;
+}
+.rings-3 {
+  position: absolute;
+  bottom: 560px;
+  right: 115px;
+}
+.iphone-5 {
+  position: absolute;
+  bottom: 520px;
+  right: 150px;
+}
+.on-hold {
+  position: absolute;
+  bottom: 840px;
+  left: 75%;
+}
+.star-6 {
+  position: absolute;
+  top: 180%;
+  right: 100px;
+}
+#customizable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#customizable .container {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+.rings-4 {
+  position: absolute;
+  top: 250%;
+  left: 10%;
+}
+.ellipse-6 {
+  position: absolute;
+  top: 265%;
+  left: 18%;
+}
+.iphone-6 {
+  position: absolute;
+  top: 262%;
+  left: 22%;
+}
+.credit-card {
+  position: absolute;
+  top: 272.5%;
+  left: 23.2%;
+}
+.customizable-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: absolute;
+  width: 50%;
+  top: 275%;
+  left: 50%;
+}
+.customizable-content .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.customizable-content p {
+  margin-top: 20px;
+  width: 70%;
+  line-height: 40px;
+  color: gray;
+  font-size: 20px;
+}
+.star-7 {
+  position: absolute;
+  top: 250%;
+  left: 45%;
+}
+
+/* testimonials section */
+
+#testimonials {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#testimonials h3 {
+  font-size: 50px;
+}
+
+.rings-5 {
+  position: absolute;
+  top: 350%;
+  left: 10%;
+}
+.ellipse-7 {
+  position: absolute;
+  top: 355%;
+  left: 12%;
+}
+.testimonial-users {
+  position: absolute;
+  top: 359%;
+  left: 15%;
+}
+#testimonials .testimonial-content {
+  position: absolute;
+}
+.testimonial-content .testimonial-title h5 {
+  position: absolute;
+  top: 250px;
+  left: 55%;
+  font-size: 30px;
+  font-weight: 700;
+}
+.testimonial-content p {
+  position: relative;
+  top: 370px;
+  left: 55%;
+  width: 35%;
+  line-height: 30px;
+  font-size: 20px;
+}
+.users {
+  position: relative;
+  top: 400px;
+  left: 55%;
+  cursor: pointer;
+}
+.testimonial-content h4 {
+  position: absolute;
+  top: 620px;
+  left: 55%;
+}
+.star-8 {
+  position: absolute;
+  top: 420%;
+  left: 150px;
+}
+
+/* FAQs section */
+#FAQ {
+  width: 100%;
+  position: absolute;
+  top: 440%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.faq-header {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.faq-header h4 {
+  color: var(--background-primary-blur-color);
+}
+.faq-header h3 {
+  color: var(--secondary-color);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 45px;
+}
+
+.faq-container {
+  margin-top: 50px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 50px;
+}
+
+.faq-box {
+  background: var(--background-primary-blur-color);
+  color: var(--primary-color);
+  width: 100%;
+  padding: 25px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.faq-box1 {
+  background: var(--primary-color);
+  width: 100%;
+  padding: 25px;
+  border-radius: 5px;
+  /* box-shadow: 2px 2px 2px   rgba(0, 0, 0, 0.35); */
+  margin-bottom: 20px;
+}
+.faq-box h3,
+.faq-box1 h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.faq-boxes {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Banner  */
+#banner {
+  width: 100%;
+  position: absolute;
+  top: 520%;
+}
+.banner-frame {
+  position: absolute;
+  bottom: -740px;
+  left: 270px;
+}
+.banner-frame img {
+  width: 1500px;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+.ellipse-8 {
+  position: absolute;
+  left: 100px;
+}
+.banner-content {
+  position: absolute;
+  top: 300px;
+  left: 500px;
+  color: var(--primary-color);
+}
+.banner-content h3 {
+  font-size: 50px;
+}
+.banner-content h4 {
+  font-weight: 400;
+  margin: 10px 0px;
+}
+.banner-content button a {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+  padding: 15px 30px;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+/* Footer  */
+footer {
+  width: 100%;
+  position: absolute;
+  top: 620%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-links {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 100px;
+}
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+footer h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.quick-links ul,
+.legal-links ul,
+.product-links ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 10px;
+}
+.quick-links ul li a,
+.legal-links ul li a,
+.product-links ul li a,
+.newsletter-links ul li a {
+  color: var(--secondary-color);
+}
+
+.newsletter-subscrption-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter-subscrption-form button a {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+  padding: 15px 30px;
+  border-radius: 5px;
+  gap: 10px;
+}
+.copyright {
+  width: 100%;
+  position: absolute;
+  top: 650%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 1500px) {
+  #hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #hero .hero-container {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    z-index: 10;
+  }
+
+  #hero .hero-image {
+    position: absolute;
+    right: 150px;
+    top: 50px;
+  }
+
+  .banner-tag {
+    position: relative;
+    top: 550px;
+    z-index: 20;
+    left: 150px;
+  }
+
+  .star-1 {
+    visibility: hidden;
+  }
+  #ellipse {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+  }
+
+  .star-2 {
+    visibility: hidden;
+  }
+  .star-3 {
+    visibility: hidden;
+  }
+  .star-4 {
+    visibility: hidden;
+  }
+  #features {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 480px;
+    padding: 10%;
+  }
+  #features .ellipse-3 {
+    position: relative;
+    right: 150px;
+  }
+  #features .rings-2 {
+    position: relative;
+    bottom: 500px;
+    right: 150px;
+  }
+  #features .iphone-4 {
+    position: relative;
+    bottom: 1170px;
+    left: 50px;
+  }
+  #features .features-content {
+    position: relative;
+    bottom: 600px;
+    left: -100px;
+  }
+  .features-content h4,
+  .advantages-content h4 {
+    font-size: large;
+    color: var(--background-primary-blur-color);
+    font-weight: 600;
+  }
+  .features-content h3,
+  .advantages-content h3 {
+    font-size: 50px;
+  }
+  .features-content .feature-box {
+    margin-top: 25px;
+  }
+  .feature-box .feature-title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .feature-title h3 {
+    font-size: large;
+  }
+  .feature-box p {
+    margin-top: 5px;
+    color: gray;
+  }
+  .ellipse-4 {
+    position: absolute;
+    right: 100px;
+    top: 1120px;
+  }
+  .star-5 {
+    visibility: hidden;
+  }
+
+  #advantages {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+  .advantages-content {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    bottom: 800px;
+    left: 100px;
+  }
+
+  .advantages-box .title {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+  }
+  .title h3 {
+    font-size: 20px;
+  }
+  .advantages-box p {
+    width: 100%;
+    line-height: 30px;
+    font-size: 15px;
+    margin-top: 20px;
+    color: gray;
+  }
+  .ellipse-5 {
+    position: absolute;
+    right: 220px;
+    bottom: 600px;
+  }
+  .rings-3 {
+    position: absolute;
+    bottom: 560px;
+    right: 115px;
+  }
+  .iphone-5 {
+    position: absolute;
+    bottom: 520px;
+    right: 150px;
+  }
+  .on-hold {
+    position: absolute;
+    bottom: 840px;
+    left: 50%;
+  }
+  .star-6 {
+    visibility: hidden;
+  }
+  #customizable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #customizable .container {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    left: 100px;
+    flex-direction: column;
+    top: 300%;
+  }
+  .rings-4 {
+    position: absolute;
+    left: -20%;
+  }
+  .ellipse-6 {
+    position: absolute;
+    top: 265%;
+    left: -50px;
+  }
+  .iphone-6 {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+  }
+  .credit-card {
+    position: absolute;
+    top: 200px;
+    left: 90px;
+  }
+  .customizable-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    width: 50%;
+    top: 325%;
+    left: 55%;
+  }
+  .customizable-content .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .customizable-content p {
+    margin-top: 20px;
+    width: 50%;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .star-7 {
+    visibility: hidden;
+  }
+
+  .star-8 {
+    visibility: hidden;
+  }
+
+  #banner {
+    width: 100%;
+    position: relative;
+    top: 520%;
+  }
+  .banner-frame {
+    position: relative;
+    bottom: 0px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-frame img {
+    width: 80%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+  }
+
+  footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-links {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  #testimonials {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+  }
+  #FAQ {
+    position: relative;
+  }
+  .copyright {
+    position: relative;
+  }
+  .banner-content {
+    position: absolute;
+    top: 170px;
+    left: 280px;
+  }
+  .banner-content h3 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #hero .hero-container {
+    position: relative;
+    top: 150px;
+    left: 50px;
+    z-index: 10;
+  }
+
+  #hero .hero-image {
+    position: relative;
+    right: 50px;
+    top: 50px;
+  }
+
+  #hero .hero-container h2 {
+    font-size: 40px;
+    color: var(--secondary-color);
+    font-weight: 900;
+    margin-bottom: 25px;
+  }
+  .banner-tag {
+    position: absolute;
+    top: 900px;
+    z-index: 20;
+    left: 150px;
+  }
+
+  .star-1 {
+    visibility: hidden;
+  }
+  #ellipse {
+    position: absolute;
+    top: 180px;
+    left: 100px;
+  }
+
+  .star-2 {
+    visibility: hidden;
+  }
+  .star-3 {
+    visibility: hidden;
+  }
+  .star-4 {
+    visibility: hidden;
+  }
+  #features {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 480px;
+    padding: 10%;
+  }
+  #features .ellipse-3 {
+    position: relative;
+    right: 150px;
+  }
+  #features .rings-2 {
+    position: relative;
+    bottom: 500px;
+    right: 150px;
+  }
+  #features .iphone-4 {
+    position: relative;
+    bottom: 1170px;
+    left: 50px;
+  }
+  #features .features-content {
+    position: relative;
+    bottom: 500px;
+    left: 0px;
+  }
+  .features-content h4,
+  .advantages-content h4 {
+    font-size: large;
+    color: var(--background-primary-blur-color);
+    font-weight: 600;
+  }
+  .features-content h3,
+  .advantages-content h3 {
+    font-size: 50px;
+  }
+  .features-content .feature-box {
+    margin-top: 0px;
+  }
+  .feature-box .feature-title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .feature-title h3 {
+    font-size: large;
+  }
+  .feature-box p {
+    margin-top: 5px;
+    color: gray;
+  }
+  .ellipse-4 {
+    visibility: hidden;
+  }
+  .star-5 {
+    visibility: hidden;
+  }
+
+  #advantages {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .advantages-content {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    bottom: 600px;
+    left: 100px;
+  }
+
+  .advantages-box .title {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+  }
+  .title h3 {
+    font-size: 20px;
+  }
+  .advantages-box p {
+    width: 100%;
+    line-height: 30px;
+    font-size: 15px;
+    margin-top: 20px;
+    color: gray;
+  }
+
+  .ellipse-5 {
+    position: absolute;
+    right: 20px;
+    bottom: 480px;
+  }
+  .rings-3 {
+    position: absolute;
+    bottom: 400px;
+    right: 10px;
+  }
+  .iphone-5 {
+    position: absolute;
+    bottom: 400px;
+    right: 20px;
+  }
+  .on-hold {
+    position: absolute;
+    bottom: 740px;
+    left: 65%;
+  }
+  .star-6 {
+    visibility: hidden;
+  }
+  #customizable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #customizable .container {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    left: 100px;
+    flex-direction: column;
+    top: 300%;
+  }
+  .rings-4 {
+    position: absolute;
+    left: -20%;
+  }
+  .ellipse-6 {
+    position: absolute;
+    top: 265%;
+    left: -50px;
+  }
+  .iphone-6 {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+  }
+  .credit-card {
+    position: absolute;
+    top: 200px;
+    left: 90px;
+  }
+  .customizable-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    width: 50%;
+    top: 325%;
+    left: 55%;
+  }
+  .customizable-content .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .customizable-content p {
+    margin-top: 20px;
+    width: 50%;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .star-7 {
+    visibility: hidden;
+  }
+
+  .star-8 {
+    visibility: hidden;
+  }
+
+  #banner {
+    width: 100%;
+    position: relative;
+    top: 520%;
+  }
+  .banner-frame {
+    position: relative;
+    bottom: 0px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-frame img {
+    width: 80%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+  }
+
+  footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-links {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  #testimonials {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+  }
+  #FAQ {
+    position: relative;
+  }
+  .copyright {
+    position: relative;
+  }
+  .banner-content {
+    position: absolute;
+    top: 170px;
+    left: 280px;
+  }
+  .banner-content h3 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #hero .hero-container {
+    position: relative;
+    top: 150px;
+    left: 50px;
+    z-index: 10;
+    width: 90%;
+  }
+
+  #hero .hero-image {
+    position: relative;
+    left: 80px;
+    top: 200px;
+  }
+
+  #hero .hero-container h2 {
+    font-size: 70px;
+    color: var(--secondary-color);
+    font-weight: 900;
+    margin-bottom: 25px;
+  }
+  .banner-tag {
+    position: absolute;
+    top: 180%;
+    z-index: 20;
+    left: 150px;
+  }
+
+  .star-1 {
+    visibility: hidden;
+  }
+  #ellipse {
+    position: absolute;
+    top: 180px;
+    left: 100px;
+  }
+
+  .star-2 {
+    visibility: hidden;
+  }
+  .star-3 {
+    visibility: hidden;
+  }
+  .star-4 {
+    visibility: hidden;
+  }
+  #features {
+    position: relative;
+    top: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 480px;
+    padding: 10%;
+  }
+  #features .ellipse-3 {
+    position: relative;
+    left: -100px;
+  }
+  #features .rings-2 {
+    position: relative;
+    bottom: 500px;
+    left: -30px;
+  }
+  #features .iphone-4 {
+    position: absolute;
+    bottom: 900px;
+    left: 280px;
+  }
+  #features .features-content {
+    position: relative;
+    bottom: 500px;
+    left: 0px;
+  }
+  .features-content h4,
+  .advantages-content h4 {
+    font-size: large;
+    color: var(--background-primary-blur-color);
+    font-weight: 600;
+  }
+  .features-content h3,
+  .advantages-content h3 {
+    font-size: 50px;
+  }
+  .features-content .feature-box {
+    margin-top: 0px;
+  }
+  .feature-box .feature-title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .feature-title h3 {
+    font-size: large;
+  }
+  .feature-box p {
+    margin-top: 5px;
+    color: gray;
+  }
+  .ellipse-4 {
+    visibility: hidden;
+  }
+  .star-5 {
+    visibility: hidden;
+  }
+
+  #advantages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 100px;
+  }
+  .advantages-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+  }
+
+  .advantages-box {
+    position: relative;
+    top: 1100px;
+    left: 300px;
+  }
+  .advantage-box .title {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+  }
+  .title h3 {
+    font-size: 20px;
+  }
+  .advantage-box p {
+    width: 70%;
+    line-height: 30px;
+    font-size: 15px;
+    margin-top: 20px;
+    color: gray;
+  }
+  */ .ellipse-5 {
+    position: absolute;
+    right: 20px;
+    bottom: 280px;
+  }
+  .rings-3 {
+    position: absolute;
+    bottom: 400px;
+    right: 10px;
+  }
+  .iphone-5 {
+    position: absolute;
+    bottom: 400px;
+    right: 20px;
+  }
+  .on-hold {
+    visibility: hidden;
+  }
+  .star-6 {
+    visibility: hidden;
+  }
+  #customizable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #customizable .container {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    left: 150px;
+    flex-direction: column;
+    top: 500%;
+  }
+  .rings-4 {
+    position: absolute;
+    left: -10%;
+  }
+  .ellipse-6 {
+    position: absolute;
+    top: 265%;
+    left: 0px;
+  }
+  .iphone-6 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+  }
+  .credit-card {
+    position: absolute;
+    top: 200px;
+    left: 220px;
+  }
+  .customizable-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    width: 80%;
+    top: 475%;
+    left: 100px;
+  }
+  .customizable-content .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .customizable-content p {
+    margin-top: 20px;
+    width: 100%;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .star-7 {
+    visibility: hidden;
+  }
+
+  .star-8 {
+    visibility: hidden;
+  }
+
+  #banner {
+    width: 100%;
+    position: absolute;
+    top: 740%;
+  }
+  .banner-frame {
+    position: relative;
+    bottom: 0px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-frame img {
+    width: 80%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+  }
+
+  footer {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 800%;
+  }
+  .footer-links {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  #testimonials {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+  }
+  #FAQ {
+    position: absolute;
+    top: 590%;
+  }
+  .copyright {
+    position: absolute;
+    top: 860%;
+    text-align: center;
+  }
+  .banner-content {
+    position: absolute;
+    top: 170px;
+    left: 280px;
+  }
+  .banner-content h3 {
+    font-size: 30px;
+  }
+  .ellipse-8 {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .header-container {
+    width: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 999;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  #header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  nav ul li a {
+    color: #000000;
+    font-size: medium;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  #header .download-btn-container button a {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 18px 20px;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: 500;
+  }
+  #hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #hero .hero-container {
+    position: relative;
+    top: 150px;
+    left: 50px;
+    z-index: 10;
+    width: 90%;
+  }
+
+  #hero .hero-image {
+    position: relative;
+    left: 80px;
+    top: 200px;
+  }
+
+  #hero .hero-container h2 {
+    font-size: 70px;
+    color: var(--secondary-color);
+    font-weight: 900;
+    margin-bottom: 25px;
+  }
+  .banner-tag {
+    position: absolute;
+    top: 180%;
+    z-index: 20;
+    left: 150px;
+  }
+
+  .star-1 {
+    visibility: hidden;
+  }
+  #ellipse {
+    position: absolute;
+    top: 180px;
+    left: 100px;
+  }
+
+  .star-2 {
+    visibility: hidden;
+  }
+  .star-3 {
+    visibility: hidden;
+  }
+  .star-4 {
+    visibility: hidden;
+  }
+  #features {
+    position: relative;
+    top: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 480px;
+    padding: 10%;
+  }
+  #features .ellipse-3 {
+    position: relative;
+    left: 150px;
+  }
+  #features .rings-2 {
+    position: relative;
+    bottom: 500px;
+    left: 150px;
+  }
+  #features .iphone-4 {
+    position: absolute;
+    bottom: 960px;
+    left: 300px;
+  }
+  #features .features-content {
+    position: relative;
+    bottom: 500px;
+    left: 0px;
+  }
+  .features-content h4,
+  .advantages-content h4 {
+    font-size: large;
+    color: var(--background-primary-blur-color);
+    font-weight: 600;
+  }
+  .features-content h3,
+  .advantages-content h3 {
+    font-size: 50px;
+  }
+  .features-content .feature-box {
+    margin-top: 0px;
+  }
+  .feature-box .feature-title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .feature-title h3 {
+    font-size: large;
+  }
+  .feature-box p {
+    margin-top: 5px;
+    color: gray;
+  }
+  .ellipse-4 {
+    visibility: hidden;
+  }
+  .star-5 {
+    visibility: hidden;
+  }
+
+  #advantages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 100px;
+  }
+  .advantages-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+  }
+
+  .advantages-box {
+    position: relative;
+    top: 1200px;
+    left: 500px;
+  }
+  .advantage-box .title {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+  }
+  .title h3 {
+    font-size: 20px;
+  }
+  .advantage-box p {
+    width: 70%;
+    line-height: 30px;
+    font-size: 15px;
+    margin-top: 20px;
+    color: gray;
+  }
+  */ .ellipse-5 {
+    position: absolute;
+    right: 20px;
+    bottom: 280px;
+  }
+  .rings-3 {
+    position: absolute;
+    bottom: 400px;
+    right: 10px;
+  }
+  .iphone-5 {
+    position: absolute;
+    bottom: 400px;
+    right: 20px;
+  }
+  .on-hold {
+    visibility: hidden;
+  }
+  .star-6 {
+    visibility: hidden;
+  }
+  #customizable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #customizable .container {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    left: 150px;
+    flex-direction: column;
+    top: 500%;
+  }
+  .rings-4 {
+    position: absolute;
+    left: -10%;
+  }
+  .ellipse-6 {
+    position: absolute;
+    top: 265%;
+    left: 0px;
+  }
+  .iphone-6 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+  }
+  .credit-card {
+    position: absolute;
+    top: 200px;
+    left: 220px;
+  }
+  .customizable-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    width: 80%;
+    top: 475%;
+    left: 100px;
+  }
+  .customizable-content .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .customizable-content p {
+    margin-top: 20px;
+    width: 100%;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .star-7 {
+    visibility: hidden;
+  }
+
+  .star-8 {
+    visibility: hidden;
+  }
+
+  #banner {
+    width: 100%;
+    position: absolute;
+    top: 730%;
+  }
+  .banner-frame {
+    position: relative;
+    bottom: 0px;
+    /* left: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-frame img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+  }
+
+  footer {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 800%;
+  }
+  .footer-links {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  #testimonials {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+  }
+  #FAQ {
+    position: absolute;
+    top: 590%;
+  }
+  .faq-container {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    left: 100px;
+  }
+
+  .faq-box h3,
+  .faq-box1 h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .faq-boxes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 100px;
+    gap: 50px;
+  }
+  .copyright {
+    position: absolute;
+    top: 860%;
+  }
+  .banner-content {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+  }
+  .banner-content h3 {
+    font-size: 25px;
+  }
+  .ellipse-8 {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header-container {
+    width: 175%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 999;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  #header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  nav ul li a {
+    color: #000000;
+    font-size: medium;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  #header .download-btn-container button a {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 18px 20px;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: 500;
+  }
+  #hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #hero .hero-container {
+    position: relative;
+    top: 150px;
+    left: 50px;
+    z-index: 10;
+    width: 90%;
+  }
+
+  #hero .hero-image {
+    position: relative;
+    left: 120px;
+    top: 200px;
+  }
+
+  #hero .hero-container h2 {
+    font-size: 70px;
+    color: var(--secondary-color);
+    font-weight: 900;
+    margin-bottom: 25px;
+  }
+  .banner-tag {
+    position: absolute;
+    top: 200%;
+    z-index: 20;
+    left: 100px;
+  }
+
+  .star-1 {
+    visibility: hidden;
+  }
+  #ellipse {
+    position: absolute;
+    top: 180px;
+    left: 100px;
+  }
+
+  .star-2 {
+    visibility: hidden;
+  }
+  .star-3 {
+    visibility: hidden;
+  }
+  .star-4 {
+    visibility: hidden;
+  }
+  #features {
+    position: relative;
+    top: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 480px;
+    padding: 10%;
+  }
+  #features .ellipse-3 {
+    position: relative;
+    left: 150px;
+  }
+  #features .rings-2 {
+    position: relative;
+    bottom: 500px;
+    left: 150px;
+  }
+  #features .iphone-4 {
+    position: absolute;
+    bottom: 960px;
+    left: 250px;
+  }
+  #features .features-content {
+    position: relative;
+    bottom: 500px;
+    left: 0px;
+  }
+  .features-content h4,
+  .advantages-content h4 {
+    font-size: large;
+    color: var(--background-primary-blur-color);
+    font-weight: 600;
+  }
+  .features-content h3,
+  .advantages-content h3 {
+    font-size: 50px;
+  }
+  .features-content .feature-box {
+    margin-top: 0px;
+  }
+  .feature-box .feature-title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .feature-title h3 {
+    font-size: large;
+  }
+  .feature-box p {
+    margin-top: 5px;
+    color: gray;
+  }
+  .ellipse-4 {
+    visibility: hidden;
+  }
+  .star-5 {
+    visibility: hidden;
+  }
+
+  #advantages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 100px;
+  }
+  .advantages-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+  }
+
+  .advantages-box {
+    position: relative;
+    top: 1400px;
+    left: 400px;
+  }
+  .advantage-box .title {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+  }
+  .title h3 {
+    font-size: 20px;
+  }
+  .advantage-box p {
+    width: 70%;
+    line-height: 30px;
+    font-size: 15px;
+    margin-top: 20px;
+    color: gray;
+  }
+  */ .ellipse-5 {
+    position: absolute;
+    right: 20px;
+    bottom: 280px;
+  }
+  .rings-3 {
+    position: absolute;
+    bottom: 400px;
+    right: 10px;
+  }
+  .iphone-5 {
+    position: absolute;
+    bottom: 400px;
+    right: 20px;
+  }
+  .on-hold {
+    visibility: hidden;
+  }
+  .star-6 {
+    visibility: hidden;
+  }
+  #customizable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #customizable .container {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    left: 50px;
+    flex-direction: column;
+    top: 580%;
+  }
+  .rings-4 {
+    position: absolute;
+    left: -10%;
+  }
+  .ellipse-6 {
+    position: absolute;
+    top: 265%;
+    left: 0px;
+  }
+  .iphone-6 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+  }
+  .credit-card {
+    position: absolute;
+    top: 200px;
+    left: 220px;
+  }
+  .customizable-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    width: 80%;
+    top: 545%;
+    left: 100px;
+  }
+  .customizable-content .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .customizable-content p {
+    margin-top: 20px;
+    width: 100%;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .star-7 {
+    visibility: hidden;
+  }
+
+  .star-8 {
+    visibility: hidden;
+  }
+
+  #banner {
+    width: 100%;
+    position: absolute;
+    top: 830%;
+  }
+  .banner-frame {
+    position: relative;
+    bottom: 0px;
+    /* left: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-frame img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+  }
+
+  footer {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 890%;
+  }
+  .footer-links {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  #testimonials {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+  }
+  #FAQ {
+    position: absolute;
+    top: 660%;
+  }
+  .faq-container {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+    left: 100px;
+  }
+
+  .faq-box h3,
+  .faq-box1 h3 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .faq-boxes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 100px;
+    gap: 50px;
+  }
+  .copyright {
+    position: absolute;
+    top: 960%;
+  }
+  .banner-content {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+  }
+  .banner-content h3 {
+    font-size: 25px;
+  }
+  .ellipse-8 {
+    visibility: hidden;
+  }
+}
